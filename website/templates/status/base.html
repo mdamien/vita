@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}{% endblock %} - Status</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+  <link rel="stylesheet" href="{% static "css/index.css" %}">
+</head>
+<body>
+  <div class="page">
+  {% block page %}{% endblock %}
+  <div class="footer">
+      {Propulsé par <a href="http://dam.io">Vita</a>}
+  </div>
+  <script src="{% static "js/jq.js" %}"></script>
+  <script src="{% static "js/bootstrap.min.js" %}"></script>
+  <script src="{% static "js/flotr2.js" %}"></script>
+  <script src="{% static "js/index.js" %}"></script>
+</body>
+</html>

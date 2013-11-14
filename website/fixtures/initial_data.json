@@ -1,0 +1,31 @@
+[
+{
+    "pk": 1, 
+    "model": "website.statuspage", 
+    "fields": {
+        "domain": "status.utc.io", 
+        "name": "UTC", 
+        "slug": "utc"
+    }
+},
+{
+    "pk": 1, 
+    "model": "website.service", 
+    "fields": {
+        "status": 0, 
+        "url": "http://ent.utc.io/", 
+        "page": 1, 
+        "name": "ENT"
+    }
+},
+{
+    "pk": 2, 
+    "model": "website.service", 
+    "fields": {
+        "status": 0, 
+        "url": "http://moodle.utc.fr/", 
+        "page": 1, 
+        "name": "Moodle"
+    }
+}
+]

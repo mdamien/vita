@@ -1,0 +1,12 @@
+{% extends "status/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block page %}
+  <h1 class="site-title">Welcome</h1>
+  <ul>
+  {% for page in pages %}
+    <li><a href="{% url 'website.views.page' page.pk %}">{{ page }}</a></li>
+  {% endfor %}
+  </ul>
+{% endblock %}
